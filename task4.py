@@ -4,7 +4,6 @@ from csv import DictReader, DictWriter
 def calculatePercent():
     """
     Вычисляет среднюю ЗП по типу трудоустройства, вычисляет процент от данной ЗП и сохраняет таблицу в новый файл "vacancy_procent.csv"
-    :param salary: Данная заработная плата
     """
 
     # Читаем исходный файл
