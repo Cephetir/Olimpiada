@@ -1,4 +1,4 @@
-import task1, task2, task3
+import task1, task2, task3, task4
 
 # Задача 1
 #task1.copy('vacancy_new.csv')
@@ -8,4 +8,7 @@ import task1, task2, task3
 #task2.printBestVacancies()
 
 # Задача 3
-task3.findByCompanyName()
+#task3.findByCompanyName()
+
+# Задача 4
+task4.calculatePercent()
