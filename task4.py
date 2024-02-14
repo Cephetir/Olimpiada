@@ -18,10 +18,11 @@ def calculatePercent():
     # Сохраняем ЗП
     salaries = {}
     for vacancy in vacancies:
-        if vacancy['Work_Type'] in salaries.keys():
-            salaries[vacancy['Work_Type']].append(int(vacancy['\ufeffSalary']))
+        workType = vacancy['Work_Type'].lower()
+        if workType in salaries.keys():
+            salaries[workType].append(int(vacancy['\ufeffSalary']))
         else:
-            salaries[vacancy['Work_Type']] = [int(vacancy['\ufeffSalary'])]
+            salaries[workType] = [int(vacancy['\ufeffSalary'])]
 
     # Вычисляем среднюю ЗП
     sr_salaries = {}

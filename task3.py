@@ -18,7 +18,7 @@ def findByCompanyName():
         # Считываем вакансии в массив соответствующие компании
         vacancies = []
         for vacancy in file:
-            if vacancy['Company'] == company:
+            if vacancy['Company'].lower() == company.lower():
                 vacancies.append(vacancy)
 
         if len(vacancies) == 0:
