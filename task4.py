@@ -39,7 +39,7 @@ def calculatePercent():
     # Вычислюем процент и печатаем все вакансии
     for vacancy in vacancies:
         salary = int(vacancy['\ufeffSalary'])
-        sr_salary = sr_salaries[vacancy['Work_Type']]
+        sr_salary = sr_salaries[vacancy['Work_Type'].lower()]
         percent = int(salary / sr_salary * 100)
 
         file2.writerow({
